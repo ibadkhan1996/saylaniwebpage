@@ -1,0 +1,20 @@
+.form {
+    background-color: blueviolet;
+    color: white;
+    font-family: Calibri, sans-serif;
+    margin: auto;
+    width: 60%;
+    padding: 8px;
+}
+.qual>td {
+    padding-bottom: 20px;
+}
+.head {
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.button {
+    text-align: center;
+}

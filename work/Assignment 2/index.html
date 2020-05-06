@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <!-- Form Head -->
+        <img src="images/saylani-logo.png" alt="Saylani Logo"><br>
+        <a href="#">STUDENT REGISTRATION FORM</a>
+    </div>
+    <br>
+    <div class="form">
+        <!-- Form Body -->
+        <form action="response.html" method="POST">
+            <table>
+                <!-- Form Inputs -->
+                <tr class="qual">
+                    <!-- First Name -->
+                    <td>FIRST NAME</td>
+                    <td><label><input type="text" name="firstname" placeholder="Enter first name" maxlength="30">
+                            (max 30
+                            characters a-z and A-Z)</label></td>
+                </tr>
+                <tr class="qual">
+                    <!-- Last Name -->
+                    <td>LAST NAME</td>
+                    <td><label><input type="text" name="lastname" placeholder="Enter last name" maxlength="30"> (max
+                            30
+                            characters a-z and A-Z)</label></td>
+                </tr>
+                <tr class="qual">
+                    <!-- DOB -->
+                    <td>DATE OF BIRTH</td>
+                    <td><select name="day">
+                            <option value="">Day:</option>
+                        </select>
+                        <select name="month">
+                            <option value="month">Month:</option>
+                        </select>
+                        <select name="year" id="">
+                            <option value="">Year:</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="qual">
+                    <!-- Email -->
+                    <td>EMAIL ID</td>
+                    <td><input type="email" name="email" placeholder="Enter email address"></td>
+                </tr>
+                <tr class="qual">
+                    <!-- Mobile Number -->
+                    <td>MOBILE NUMBER</td>
+                    <td><label><input type="number" name="mobile" placeholder="Enter mobile number" maxlength="10">
+                            (10 digit number)</label></td>
+                </tr>
+                <tr class="qual">
+                    <!-- Gender -->
+                    <td>GENDER</td>
+                    <td>
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                    </td>
+                </tr>
+                <tr class="qual">
+                    <!-- Address -->
+                    <td>ADDRESS</td>
+                    <td><textarea name="address" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr class="qual">
+                    <!-- City -->
+                    <td>CITY</td>
+                    <td><label></label><input type="text" name="city" placeholder="Enter city name" maxlength="30">
+                        (max 30 characters a-z and A-Z)</a-z></label></td>
+                </tr>
+                <tr class="qual">
+                    <!-- Pincode -->
+                    <td>PIN CODE</td>
+                    <td><input type="number" name="pincode" placeholder="Enter pincode" maxlength="6"> (6 digit
+                        number)</td>
+                </tr>
+                <tr class="qual">
+                    <!-- State -->
+                    <td>STATE</td>
+                    <td><input type="text" name="state" placeholder="Enter State" maxlength="30"> (max 30 characters
+                        a-z and A-Z)</td>
+                </tr>
+                <tr class="qual">
+                    <!-- Country -->
+                    <td>COUNTRY</td>
+                    <td><input type="text" name="country" placeholder="Enter country"></td>
+                </tr>
+                <tr class="qual">
+                    <!-- Hobbies -->
+                    <td>HOBBIES</td>
+                    <td>
+                        <label><input type="checkbox" name="hobbies" value="drawing">Drawing</label>
+                        <label><input type="checkbox" name="hobbies" value="singing">Singing</label>
+                        <label><input type="checkbox" name="hobbies" value="dancing">Dancing</label>
+                        <label><input type="checkbox" name="hobbies" value="sketching">Sketching</label><br>
+                        <label><input type="checkbox" name="hobbies" value="others">Others <input type="text"
+                                name="hobbies"></label>
+                    </td>
+                </tr>
+                <tr class="qual">
+                    <!-- Qualification-->
+                    <td>QUALIFICATION</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>S.No.</td>
+                                <td>Examination</td>
+                                <td>Board</td>
+                                <td>Percentage</td>
+                                <td>Year of Passing</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text" name="matricboard"></td>
+                                <td><input type="text" name="matricpercentage"></td>
+                                <td><input type="text" name="matricyear"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td><input type="text" name="interboard"></td>
+                                <td><input type="text" name="interpercentage"></td>
+                                <td><input type="text" name="interyear"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td><input type="text" name="graduateboard"></td>
+                                <td><input type="text" name="graduatepercentage"></td>
+                                <td><input type="text" name="graduateyear"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text" name="mastersboard"></td>
+                                <td><input type="text" name="masterspercentage"></td>
+                                <td><input type="text" name="mastersyear"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>(10 char max)</td>
+                                <td>(upto 2 decimal)</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="qual">
+                    <!-- Courses -->
+                    <td>COURSES APPLIED FOR</td>
+                    <td><label><input type="radio" name="course" value="bca">BCA</label>
+                        <label><input type="radio" name="course" value="bcom">B.COM</label>
+                        <label><input type="radio" name="course" value="bsc">B.Sc</label>
+                        <label><input type="radio" name="course" value="ba">B.A</label>
+                    </td>
+                </tr>
+            </table>
+            <div class="button">
+                <!-- Button -->
+                <input type="submit" value="Submit">
+                <button>Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
